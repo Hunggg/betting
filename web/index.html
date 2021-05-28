@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yolo Betting</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="prepare">
+    <button class="btn btn-primary" id="btn-connect">
+      Connect wallet
+    </button>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="row text-center">
+          <img src="images/logo.png" alt="Yolo Betting"/>
+        </div>
+        <hr />
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card-counter player">
+                <i class="fa fa-users"></i>
+                <span class="count-numbers" id="total-slots"></span>
+                <span class="count-name"> All Slots</span>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card-counter last-winner">
+                <i class="fa fa-trophy"></i>
+                <span class="count-numbers" id="last-winner-number"></span>
+                <span class="count-name">Last Win Number</span>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card-counter bet-value">
+                <i class="fa fa-ticket-alt"></i>
+                <span class="count-numbers" id="number-of-bets"></span>
+                <span class="count-name">Number of Bets</span>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card-counter total-bet">
+                <i class="fab fa-ethereum"></i>
+                <span class="count-numbers" id="total-bet"></span>
+                <span class="count-name">Total Betted</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <h3 class="text-center">Let's vote for the next number (Price: 1 ETH)</h3>
+        </br>
+        </br>
+        <button type="button" class="btn bet-number btn-danger btn-circle btn-xl">1</button>
+        <button type="button" class="btn bet-number btn-danger btn-circle btn-xl">2</button>
+        <button type="button" class="btn bet-number btn-danger btn-circle btn-xl">3</button>
+        <button type="button" class="btn bet-number btn-danger btn-circle btn-xl">4</button>
+        <button type="button" class="btn bet-number btn-danger btn-circle btn-xl">5</button>
+        <button type="button" class="btn bet-number btn-danger btn-circle btn-xl">6</button>
+        <button type="button" class="btn bet-number btn-danger btn-circle btn-xl">7</button>
+        <button type="button" class="btn bet-number btn-danger btn-circle btn-xl">8</button>
+        <button type="button" class="btn bet-number btn-danger btn-circle btn-xl">9</button>
+        <button type="button" class="btn bet-number btn-danger btn-circle btn-xl">10</button>
+
+        <hr />
+
+        <div class="row text-center">
+          <h4>Your account: <span id='selected-account'></span></h4>
+        </div>
+
+        <div class="col-xs-6 col-xs-offset-3 column margintop20 text-center">
+          <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#"><span class="fa fa-gamepad"></span> Current Game</a></li>
+            <li><a href="#"><span class="fa fa-user"></span> <span id='player1'>NA</span></a></li>
+            <li><a href="#"><span class="fa fa-user"></span> <span id='player2'>NA</span></a></li>
+            <li><a href="#"><span class="fa fa-user"></span> <span id='player3'>NA</span></a></li>
+            <!-- <li><a href="#"><span class="fa fa-user"></span> <span id='player4'>Option 4</span></a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/web3@1.2.11/dist/web3.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/web3modal@1.9.0/dist/index.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
